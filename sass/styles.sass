@@ -1,0 +1,271 @@
+@import "grid.sass"
+@import "fonts.sass"
+@import "smart-grid.sass"
+
++reset()
+
+
+
+.container
+    +wrapper()
+.header
+    padding: 51px 0 142px
+    text-align: center
+.row
+    +row-flex()
+    align-items: center
+    justify-content: center
+    
+.header__nav
+    +col()
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    flex-grow: 1
+    +sm-block()
+        align-items: stretch
+        position: relative
+.header__logo
+    margin-right: auto
+.menutoggle
+    display: none
+    +sm-block()
+        display: inline-block
+        font-size: 30px
+        color: #fff
+        margin-left: auto
+        +size(1)
+        
+
+#menuCheck
+    display: none
+    +sm-block()
+#menuCheck:checked+.header__menu
+    +sm-block()
+        display: flex
+        position: absolute
+        left: 60%
+        top: 90%
+        right: 5%
+        flex-wrap: wrap
+        flex-direction: column
+        background-color: rgba(245, 170, 32, 0.4)
+        +size(6)
+        
+
+
+.header__menu
+    display: flex
+    flex-wrap: wrap
+    margin-left: auto
+    +sm-block()
+        display: none
+       
+li:nth-last-child(-n+3)
+    padding-left: 0
+    +sm-block()
+        display: none
+li
+    padding-left: 50px
+.nav__icons
+    margin-left: 20px
+.nav__icons-icon
+    padding-left: 20px
+.header__text
+    +col()
+    +size(10)
+    margin-top: 167px
+    margin-bottom: 34px
+.header__text-btns
+    padding-top: 70px
+.header__btn
+    padding: 23px 52px
+.btn-o
+    box-sizing: border-box   
+
+
+.section__text
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    +col()
+    +size(4)
+    +size-sm(8)
+    +offset-left(1)
+.section__text-title 
+    padding-top: 106px
+    
+.section__text-decor
+     padding-top: 25px
+.section__text-descr
+   padding: 32px 0 52px
+.section__text-img
+    padding-bottom: 114px
+.section__img
+    +col()
+    
+    +size(6)
+    +size-sm(8)
+    +sm-block()
+        padding-top: 0
+    padding-top: 55px
+
+.ingredients
+    .row
+        justify-content: flex-end 
+
+.section__text-bl
+    margin: 130px 0 101px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    +col()
+    +size(6)
+    +size-md(7)
+    +size-sm(10)
+
+    align-self: flex-end
+    border: 1px solid #fbf7c0
+    background-color: #000000
+    opacity: 0.67
+    text-align: center
+.section__text-title_i
+    +col()
+    +size(8)
+    padding-top: 83px
+.section__text-descr_i
+    +col()
+    +size(10)
+    margin: 30px 0 70px
+.section__text-img
+    display: flex
+    flex-wrap: wrap
+    +col()
+    +size(10)
+    justify-content: space-around
+.menu
+    padding: 52px 0 100px
+    .row
+        align-items: flex-start
+
+.menu__item
+    
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    +col()
+    +size(4)
+    +offset(1)
+    +size-sm(8)
+    
+    
+
+.menu__item-title
+    margin: 16px
+    +col()
+    +size(12)
+    text-align: center
+.menu__item-decor
+    max-height: 28px
+    img
+        +col
+        
+        
+        
+ 
+    
+.menu__item-list
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    
+    
+.list-items
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 37px
+.item-title
+    margin-right: auto
+.item-price
+    margin-left: auto
+.hr
+    width: 100%
+    height: 1px
+    border: 1px solid #fbf7c0
+    background-color: #c89f2d
+    margin: 5px 0 5px
+.reviews
+    padding: 100px 0 101px 
+.reviews__text
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 1px solid #fbf7c0
+    background-color: #000000
+    padding: 82px 74px 103px
+    +col()
+    +size(8)
+.reviews__text-title
+    margin-bottom: 23px
+.reviews__text-decor
+    margin-bottom: 20px
+.reviews__text-descr-au
+    margin-top: 50px
+
+.reserv
+    padding: 100px 0 103px
+    .row
+        justify-content: flex-start
+        align-items: stretch
+.reserv__img
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    +col()
+    +size(6)
+.reserv__text
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    +col()
+    +size(4)
+    +offset(1) 
+.reserv__text-title
+    margin-bottom: 32px
+.reserv__text-decor
+    margin-bottom: 32px
+    
+.reserv__text-descr
+    margin-bottom: 60px
+.reserv__text-form
+    display: flex
+    align-content: stretch
+    flex-wrap: wrap
+    justify-content: space-between
+
+footer
+    padding: 61px 0 72px
+    .row
+        align-items: stretch
+.footer__text
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    +col()
+    +size(4)
+.footer__text-title
+    margin-bottom: 21px
+.footer__text-img
+    margin-bottom: 21px
+.footer__text-icons
+    margin-top: auto
+
+    
+
+
+    
+
